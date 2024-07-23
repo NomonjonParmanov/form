@@ -4,6 +4,8 @@ import "./sass/global.scss"; // Ensure this path matches your directory structur
 
 function App() {
   const [selectedOptions, setSelectedOptions] = useState([]);
+  const [name, setName] = useState("");
+  const [text, setText] = useState("");
   const options = [
     { value: "chocolate", label: "Chocolate" },
     { value: "strawberry", label: "Strawberry" },
@@ -26,15 +28,26 @@ function App() {
       borderColor: state.isFocused ? "#ccc" : "#ccc",
     }),
   };
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setName("");
+    setSelectedOptions([]);
+    setText("");
+  };
+  console.log(name, selectedOptions, text);
   return (
     <div className="container form">
       <div className="form__content">
         <h1>Title</h1>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="input">
             <label htmlFor="">Name</label>
-            <input type="text" placeholder="name" />
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              type="text"
+              placeholder="name"
+            />
           </div>
           <div className="selected">
             <label htmlFor="">Select</label>
@@ -57,7 +70,13 @@ function App() {
           </div>
           <div className="textarea">
             <label htmlFor="">Text</label>
-            <textarea cols="30" rows="10" placeholder="text"></textarea>
+            <textarea
+              value={text}
+              onChange={(e) => setText(e.target.value)}
+              cols="30"
+              rows="10"
+              placeholder="text"
+            ></textarea>
           </div>
         </form>
       </div>
