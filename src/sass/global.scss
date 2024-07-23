@@ -110,8 +110,8 @@ textarea {
       input {
         width: 300px;
         height: 40px;
-        padding-left: 10px;
         border: 1px solid gray;
+        padding: 0 5px;
         outline: none;
         border-color: #ccc;
         font-size: 17px;
@@ -119,14 +119,16 @@ textarea {
           border: 1px solid rgb(69, 191, 191);
           box-shadow: -1px 2px 15px 0px rgba(69, 191, 191, 0.2);
         }
+        border-radius: 6px;
       }
       textarea {
+        border-radius: 10px;
         width: 300px;
-        height: 60px;
-        resize: none;
+        min-height: 100px;
+        max-height: 300px;
+        resize: vertical;
         border: 1px solid gray;
-        padding-top: 10px;
-        padding-left: 10px;
+        padding: 5px 5px;
         font-size: 17px;
         border-color: #ccc;
         &:focus {

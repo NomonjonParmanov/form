@@ -66,8 +66,8 @@ function App() {
             <textarea
               value={text}
               onChange={(e) => setText(e.target.value)}
-              cols="30"
-              rows="10"
+              cols="300"
+              rows="300"
               placeholder="text"
             ></textarea>
           </div>
