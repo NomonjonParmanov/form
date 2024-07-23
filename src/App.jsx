@@ -16,13 +16,6 @@ function App() {
   ];
 
   const customStyles = {
-    control: (provided, state) => ({
-      ...provided,
-      borderColor: state.isFocused ? "#ccc" : "#ccc",
-      "&:hover": {
-        borderColor: state.isFocused ? "#ccc" : "#ccc",
-      },
-    }),
     control: (baseStyles, state) => ({
       ...baseStyles,
       borderColor: state.isFocused ? "#ccc" : "#ccc",
