@@ -1,26 +1,26 @@
 import React, { useState } from "react";
-import Select from "react-select";
-import "./sass/global.scss"; // Ensure this path matches your directory structure
+// import Select from "react-select";
+import "./sass/global.scss";
 
 function App() {
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [name, setName] = useState("");
   const [text, setText] = useState("");
-  const options = [
-    { value: "chocolate", label: "Chocolate" },
-    { value: "strawberry", label: "Strawberry" },
-    { value: "vanilla", label: "Vanilla" },
-    { value: "banana", label: "banana" },
-    { value: "orange", label: "orange" },
-    { value: "car", label: "car" },
-  ];
+  // const options = [
+  //   { value: "chocolate", label: "Chocolate" },
+  //   { value: "strawberry", label: "Strawberry" },
+  //   { value: "vanilla", label: "Vanilla" },
+  //   { value: "banana", label: "banana" },
+  //   { value: "orange", label: "orange" },
+  //   { value: "car", label: "car" },
+  // ];
 
-  const customStyles = {
-    control: (baseStyles, state) => ({
-      ...baseStyles,
-      borderColor: state.isFocused ? "#ccc" : "#ccc",
-    }),
-  };
+  // const customStyles = {
+  //   control: (baseStyles, state) => ({
+  //     ...baseStyles,
+  //     borderColor: state.isFocused ? "#ccc" : "#ccc",
+  //   }),
+  // };
   const handleSubmit = (e) => {
     e.preventDefault();
     setName("");
@@ -42,7 +42,7 @@ function App() {
               placeholder="name"
             />
           </div>
-          <div className="selected">
+          {/* <div className="selected">
             <label htmlFor="">Select</label>
             <Select
               isMulti
@@ -60,7 +60,7 @@ function App() {
               className="custom-select"
               placeholder="Select"
             />
-          </div>
+          </div> */}
           <div className="textarea">
             <label htmlFor="">Text</label>
             <textarea

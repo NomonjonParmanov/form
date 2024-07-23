@@ -28,79 +28,82 @@ textarea {
   padding-top: 100px !important;
   display: flex;
   justify-content: center;
+
   .form__content {
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.08);
     padding: 30px;
     h1 {
       text-align: center;
-      padding-bottom: 10px;
+      padding-bottom: 20px;
+      color: rgb(69, 191, 191);
     }
     form {
       display: flex;
       align-items: center;
       flex-direction: column;
       gap: 30px;
-      .selected {
-        width: 100%;
-      }
+
       label {
         display: block;
         padding-bottom: 5px !important;
-        font-size: 15px;
+        font-size: 18px;
       }
-      .custom-select {
-        width: 100%;
-        min-height: 40px;
-        &:focus {
-          border: 1px solid gray !important;
-        }
-        &--is-focused {
-          border-color: gray !important;
-          box-shadow: none;
-        }
-        .select__control {
-          border-color: #ccc !important;
-          box-shadow: none;
-          border-radius: 4px;
-          &:hover {
-            border-color: gray !important;
-          }
+      // .selected {
+      //   width: 100%;
+      // }
+      // .custom-select {
+      //   width: 100%;
+      //   min-height: 40px;
+      //   &:focus {
+      //     border: 1px solid gray !important;
+      //   }
+      //   &--is-focused {
+      //     border-color: gray !important;
+      //     box-shadow: none;
+      //   }
+      //   .select__control {
+      //     border-color: #ccc !important;
+      //     box-shadow: none;
+      //     border-radius: 4px;
+      //     &:hover {
+      //       border-color: gray !important;
+      //     }
 
-          &--is-focused {
-            border-color: gray !important;
-            box-shadow: none;
-          }
-        }
+      //     &--is-focused {
+      //       border-color: gray !important;
+      //       box-shadow: none;
+      //     }
+      //   }
 
-        .select__menu {
-          border-radius: 4px;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          background-color: #fff;
-        }
+      //   .select__menu {
+      //     border-radius: 4px;
+      //     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      //     background-color: #fff;
+      //   }
 
-        .select__multi-value {
-          background-color: transparent;
-          color: #fff;
-          border-radius: 4px;
-          padding: 2px 6px;
-        }
+      //   .select__multi-value {
+      //     background-color: transparent;
+      //     color: #fff;
+      //     border-radius: 4px;
+      //     padding: 2px 6px;
+      //   }
 
-        .select__multi-value__label {
-          color: #fff;
-        }
+      //   .select__multi-value__label {
+      //     color: #fff;
+      //   }
 
-        .select__option {
-          padding: 8px;
-          font-size: 14px;
-          color: #333;
-          &:hover {
-            background-color: #f0f0f0;
-          }
-        }
-      }
-      .react-select__option--is-selected {
-        background-color: #ccc;
-      }
+      //   .select__option {
+      //     padding: 8px;
+      //     font-size: 14px;
+      //     color: #333;
+      //     &:hover {
+      //       background-color: #f0f0f0;
+      //     }
+      //   }
+      // }
+      // .react-select__option--is-selected {
+      //   background-color: #ccc;
+      // }
       input {
         width: 300px;
         height: 40px;
@@ -108,6 +111,11 @@ textarea {
         border: 1px solid gray;
         outline: none;
         border-color: #ccc;
+        font-size: 17px;
+        &:focus {
+          border: 1px solid rgb(69, 191, 191);
+          box-shadow: -1px 2px 15px 0px rgba(69, 191, 191, 0.2);
+        }
       }
       textarea {
         width: 300px;
@@ -116,7 +124,12 @@ textarea {
         border: 1px solid gray;
         padding-top: 10px;
         padding-left: 10px;
+        font-size: 17px;
         border-color: #ccc;
+        &:focus {
+          border: 1px solid rgb(69, 191, 191);
+          box-shadow: -1px 2px 15px 0px rgba(69, 191, 191, 0.2);
+        }
       }
     }
   }
@@ -127,11 +140,12 @@ textarea {
     justify-self: center;
     .form__content {
       padding: 15px;
-      .from {
-        width: 100%;
+      form {
+        width: 200px;
         input {
           width: 100%;
           height: 30px;
+          font-size: 14px;
         }
         .select {
           width: 100%;
@@ -139,7 +153,8 @@ textarea {
         }
         textarea {
           width: 100%;
-          height: 30px;
+          min-height: 30px;
+          font-size: 14px;
         }
       }
     }
