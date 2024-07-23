@@ -135,13 +135,13 @@ textarea {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 300px) {
   .form {
     justify-self: center;
     .form__content {
       padding: 15px;
       form {
-        width: 200px;
+        width: 290px;
         input {
           width: 100%;
           height: 30px;
@@ -152,7 +152,7 @@ textarea {
           height: 30px;
         }
         textarea {
-          width: 100%;
+          width: 185px;
           min-height: 30px;
           font-size: 14px;
         }
